@@ -25,15 +25,27 @@ try:
 
     # next_id = database.nextId("STUDENTS")
 
+<<<<<<< HEAD
+    values = "'" + StudentId + "', '" + StundetName + "', '" + StundentMajor + "' "
+=======
     values = "'" + StudentId + "','" + StundetName + "','" + StundentMajor + "'"
+>>>>>>> 601c3fb65fe59f4d4e844721726b027d622cdb10
 
 
     database.insert("STUDENTS", values)
     res = database.executeSelect('SELECT * FROM STUDENTS;')
     res = res.split('\n')  # split the header and data for printing
+<<<<<<< HEAD
+    
+    # print("<br/>" + "<br/>")
+    # print("<br/>" + "Table Students after:"+
+    #       "<br/>" +
+    #       res[0] + "<br/>"+res[1] + "<br/>")
+=======
     print("<br/>" + "<br/>")
     print("<br/>" + "Table Students after:"+"<br/>" +
           res[0] + "<br/>"+res[1] + "<br/>")
+>>>>>>> 601c3fb65fe59f4d4e844721726b027d622cdb10
     for i in range(len(res)-2):
         print(res[i+2]+"<br/>")
     database.close_db()  # close db
