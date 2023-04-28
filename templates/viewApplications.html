@@ -1,0 +1,59 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python CGI Script Example</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        background-image: url('background.png');
+
+    }
+    
+    h1 {
+        text-align: center;
+        margin-top: 50px;
+    }
+    
+    table {
+        margin: 50px auto;
+        border-collapse: collapse;
+        width: 80%;
+    }
+    
+    th, td {
+        padding: 12px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    th {
+        background-color: #007bff;
+        color: #fff;
+    }
+</style>
+</head>
+<body>
+
+<h1>Applications</h1>
+<!-- Control buttons -->
+<div id="myBtnContainer">
+<button class="btn active" onclick="filterSelection('all')"> Show all</button>
+<button class="btn" onclick="filterSelection('cars')"> Computer Science</button>
+<button class="btn" onclick="filterSelection('animals')"> Computer Engineering</button>
+<button class="btn" onclick="filterSelection('fruits')"> Mechanical Engineering</button>
+<button class="btn" onclick="filterSelection('colors')"> Electrical Engineering</button>
+</div>
+    <table>
+    <tr>
+        <th>Student ID</th>
+        <th>Job ID</th>
+    </tr>
+
+<tr><td>{StudentId}</td><td>JobID</td></tr>
+
+</table>
+</body>
+</html>

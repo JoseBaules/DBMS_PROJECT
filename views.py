@@ -30,5 +30,3 @@ def add_student():
 
     print("running add_student web page....")
     return render_template('add_student.html')
-
-    
